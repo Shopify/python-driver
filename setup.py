@@ -318,7 +318,7 @@ def run_setup(extensions):
     kw['ext_modules'] = [Extension('DUMMY', [])]  # dummy extension makes sure build_ext is called for install
 
     if try_cython:
-        kw['setup_requires'] = ['Cython>=0.20']
+        kw['setup_requires'] = ['Cython>=0.20,<0.25']
 
     dependencies = ['six >=1.6']
 
